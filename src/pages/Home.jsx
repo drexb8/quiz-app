@@ -15,17 +15,22 @@ function Home() {
   }, []);
 
   return (
-    <div>
-      Home
-      <img
-        src="assets/download-removebg-preview.png"
-        alt=""
-        className={`${isFullSize ? "scale-120" : "scale-10"} transition-transform duration-1000 ease-in-out`}
-      />
-      <button className="cursor-pointer rounded-sm border border-slate-400 px-2 py-1 hover:bg-slate-50">
-        <Link to="/categories">Categories</Link>
-      </button>
-    </div>
+    <>
+      <div>
+        Home
+        <img
+          src="assets/download-removebg-preview.png"
+          alt=""
+          className={`${isFullSize ? "mb-10 scale-120" : "mb-10 scale-10"} block transition-transform duration-1000 ease-in-out`}
+        />
+      </div>
+      <Link
+        to="/Categories"
+        className="cursor-pointer rounded-sm border border-slate-400 px-2 py-1 hover:bg-slate-50"
+      >
+        Categories
+      </Link>
+    </>
   );
 }
 
